@@ -29,6 +29,8 @@ signupRouter.post('/register', async(req,res)=>{
     return res.status(400).send({error:"Password should be atleast one uppercase one alpa and one number"})
 })
 
+
+
 const checkPass=(password)=>{
     if(password.length<8){
         return false
